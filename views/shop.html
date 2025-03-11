@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - Cameron's Customs</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Cameron's Customs</a>
+        </li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/shop">Shop</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Cameron's Customs - Browse</h1>
+
+      <h2>Our Products</h2>
+      <table>
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>Branded Shirts (10/order)</td>
+          <td>$185.99</td>
+          <td><button id="shirt" data-price="185.99">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>Custom Pencils (200/order)</td>
+          <td>$329.99</td>
+          <td><button id="pencils" data-price="329.99">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>Custom Mousepads (30/order)</td>
+          <td>$282.40</td>
+          <td>
+            <button id="mousepads" data-price="282.40">Add to Cart</button>
+          </td>
+        </tr>
+      </table>
+
+      <h2>Shipping Information</h2>
+      <input type="email" name="email" id="email" placeholder="email" />
+      <br />
+      <input type="text" name="name" id="name" placeholder="Your Name" />
+
+      <h2>All Set?</h2>
+      <p>
+        You currently have: <span id="cartDisplay"></span> items in your cart.
+      </p>
+      <button id="displayInvoice" style="display: none">Get Invoice</button>
+
+      <button style="display: none" id="downloadPdf">Download Invoice</button>
+
+      <section style="display: none" id="pdfPreviewer">
+        <iframe id="pdf-preview" frameborder="0"></iframe>
+      </section>
+    </section>
+
+    <script type="module" src="app/app.js"></script>
+  </body>
+</html>
